@@ -1,0 +1,79 @@
+*{
+padding:0;
+margin:0 auto;
+box-sizing:border-box;
+
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+h1 {
+    text-align: center;
+    height: 300px; /* Set the height of the <h1> element */
+       background: url('asthetic img.webp') no-repeat center center;
+    background-size: cover;
+    -webkit-background-clip: text; /* Clip the background image to the text */
+    color: transparent; /* Hide the text */
+font-size:80px;
+}
+
+@media (max-width: 868px) {
+h1 {
+font-size:30px;
+
+}
+}
+.main-div {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.second-div {
+    display: flex;
+    justify-content:center; 
+    align-items: center; 
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+margin-top:-200px;
+}
+
+.left-col, .right-col {
+    flex: 1; /* Equal width for both columns */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #f0f0f0; /* Light background color */
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8); /* Shadow effect */
+ max-width:500px;
+
+}
+
+.left-col {
+    margin-right: 10px; /* Add some margin between columns */
+}
+
+/* Responsive styling */
+@media (max-width: 868px) {
+    .second-div {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        justify-content: flex-start; /* Align items to the start */
+margin-top:200px;
+
+    }
+
+    .left-col, .right-col {
+        margin-right: 0; /* Remove margin between columns */
+        margin-bottom: 10px; /* Add some margin at the bottom for spacing */
+    }
+}
+.left-col{
+background-color:green;
+color:#fff;
+}
+.right-col{
+    background-color:white;
+}
